@@ -11,11 +11,26 @@
 }
 
 .input {
-    background-color: $light-gray;
-    outline: none;
-    border: none;
+    background-color: #f7f7f7;
+    font-size: 14px;
     padding: 10px;
     border-radius: 3px;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    &::placeholder {
+        color: #aaa;
+        font-family: 'Poppins', sans-serif;
+        transition: color .3s ease;
+    }
+
+    &:focus::placeholder {
+        color: transparent;
+    }
 }
 
 .txtArea {
