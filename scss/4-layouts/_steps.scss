@@ -1,0 +1,15 @@
+.stepsWrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4em;
+}
+
+@media screen and (max-width: 868px) {
+    .stepsWrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0;
+        width: 60vw;
+        margin: 0 auto;
+    }
+}

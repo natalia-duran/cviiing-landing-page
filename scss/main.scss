@@ -1,13 +1,34 @@
-@import 'variables';
-@import 'config';
-@import 'scrollbar';
+// 1 - HELPERS
+@import '1-helpers/variables';
+@import '1-helpers/functions';
 
-@import 'menu';
-@import 'hero';
+@import 'config';
+
+// 2 - BASICS
+@import '2-basics/scrollbar';
+@import '2-basics/cards';
+@import '2-basics/buttons';
+
+// 3 - COMPONENTS
+@import '3-components/menu';
+@import '3-components/forms';
+@import '3-components/footer';
 
 @import 'utilities';
-@import 'cards';
-@import 'forms';
-@import 'buttons';
 
-@import 'footer';
+// 4 - LAYOUTS
+@import '4-layouts/hero';
+@import '4-layouts/steps';
+@import '4-layouts/creators';
+@import '4-layouts/products';
+@import '4-layouts/pricing';
+@import '4-layouts/faq';
+
+
+
+
+
+
+
+
+

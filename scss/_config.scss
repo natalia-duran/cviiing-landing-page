@@ -10,16 +10,4 @@ body {
     font-weight: map-get($font-weights, regular);
 }
 
-// ======================= SET BACKGROUND AND TEXT COLOR
-@mixin set-color($background, $font) {
-    background-color: $background;
-    color: $font;
-}
-
-// ======================= CENTER AN ELEMENT 
-@mixin  flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
