@@ -85,4 +85,65 @@
     &__body {
         margin: 1rem 0;
     }
+
+    &__iconBox {
+        box-shadow: $darker-shadow;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 5px;
+        margin: .5rem auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__planIcon {
+        width: 3rem;
+    }
+
+    &__price {
+        font-size: 3rem;
+        font-weight: 500;
+    }
+
+    &__list {
+        list-style-type: none;
+        display: inline-block;
+        margin-bottom: .5rem;
+    }
+
+    &__listItem {
+        text-align: left;
+
+        i {
+            color: $primary-color;
+        }
+    }   
+    
+    &__listItem--light {
+        text-align: left;
+
+        i {
+            color: #fff;
+        }
+    }
+}
+
+
+.card--small {
+    background-color: #fff;
+    width: 70%;
+    padding: 1em 2em; 
+    border-radius: 9px;
+    margin-bottom: 1.5rem;
+    border-left: 5px solid indigo;
+    border-radius: 5px;
+    box-shadow: $lighter-shadow;
+}
+
+.card--dark {
+    box-shadow: $lighter-shadow;
+    border-radius: 9px;
+    background: $primary-color;
+    color: #fff;
 }

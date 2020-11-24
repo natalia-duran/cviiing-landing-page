@@ -155,3 +155,51 @@
         font-size: 2rem;
     }
 }
+
+.faq__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.faq__icon {
+    width: 17px;
+    height: 17px;
+    transition: transform .4s ease;
+}
+
+.faq__togglerBtn {
+    display: none;
+}
+
+.faq__answer {
+    display: none;
+    padding-top: 1rem; 
+    color: grey;
+}
+
+.faq__togglerBtn:checked ~ .faq__answer {
+    display: block;
+}
+
+.faq__togglerBtn:checked ~ .faq__title .faq__icon {
+    transform: rotate(180deg);
+}
+
+.faq__togglerBtn2:checked ~ .faq__answer {
+    display: block;
+}
+
+.faq__togglerBtn2:checked ~ .faq__title .faq__icon {
+    transform: rotate(180deg);
+}
+
+.faq__togglerBtn3:checked ~ .faq__answer {
+    display: block;
+}
+
+.faq__togglerBtn3:checked ~ .faq__title .faq__icon {
+    transform: rotate(180deg);
+}
