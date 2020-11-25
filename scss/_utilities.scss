@@ -1,39 +1,44 @@
 
-.pageSection {
-    width: 90vw;
-    margin: 5rem auto;
-}
+// .pageSection {
+//     width: 90vw;
+//     margin: 5rem auto;
+// }
 
-.sectionHeader {
-    margin: 3em 0;
-}
+// .sectionHeader {
+//     margin: 3em 0;
+// }
 
-.sectionTitle {
-    font-weight: map-get($font-weights, bold);
-    font-size: 3rem;
-    text-align: center;
-}
+// .sectionTitle {
+//     font-weight: map-get($font-weights, bold);
+//     font-size: 3rem;
+//     text-align: center;
+// }
 
-.sectionSubtitle {
-    font-weight: map-get($font-weights, semi-bold);
-    font-size: 1.5em;
-    text-align: center;
-    margin: 0;
-}
+// .sectionSubtitle {
+//     font-weight: map-get($font-weights, semi-bold);
+//     font-size: 1.5em;
+//     text-align: center;
+//     margin: 0;
+// }
 
-.sectionHeader__line {
-    background: $brand-gradient;
-    width: 5rem;
-    height: 5px;
-    border-radius: 5px;
-    margin: 0 auto;
-    margin-top: 15px;
-}
+// .sectionHeader__line {
+//     background: $brand-gradient;
+//     width: 5rem;
+//     height: 5px;
+//     border-radius: 5px;
+//     margin: 0 auto;
+//     margin-top: 15px;
+// }
+
+
+
+//----------------------------------
 
 .subPageHeader {
     text-align: center;
     margin: 3rem;
 }
+
 
 .subPageTitle {
     font-weight: map-get($font-weights, black-bold);
@@ -48,15 +53,22 @@
     align-items: center;
 }
 
-@media screen and (max-width: 570px) {
-    .sectionTitle {
-        font-size: 2.5rem;
-    }
-}
 
-@media screen and (max-width: 400px) {
-    .sectionTitle {
-        font-size: 2rem;
-    }
-}
+
+//----------------------------------
+
+
+// @media screen and (max-width: 570px) {
+//     .sectionTitle {
+//         font-size: 2.5rem;
+//     }
+// }
+
+// @media screen and (max-width: 400px) {
+//     .sectionTitle {
+//         font-size: 2rem;
+//     }
+// }
+
+
 
