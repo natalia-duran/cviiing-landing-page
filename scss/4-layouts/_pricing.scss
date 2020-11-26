@@ -52,3 +52,20 @@
     }
 }
 
+.subpage__pricing {
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    grid-gap: 2rem;
+    justify-content: center;
+    padding: 1rem 0;
+
+    @include large-screens {
+        display: grid;
+        grid-template-columns: repeat(1, 42vmax);
+        grid-gap: 2rem;
+        justify-content: center;
+        padding: 1rem 0;
+    }
+}
+
+

@@ -375,6 +375,15 @@ body::-webkit-scrollbar-thumb {
     margin: 0 auto;
     margin-top: 15px; }
 
+.subpage__header {
+  text-align: center;
+  margin: 3rem; }
+
+.subpage__title {
+  font-weight: 900;
+  font-size: 3rem;
+  margin: .2em 0; }
+
 .formContainer {
   display: flex;
   justify-content: center;
@@ -717,35 +726,31 @@ body::-webkit-scrollbar-thumb {
       justify-content: center;
       padding: 1rem 0; } }
 
-.products__header {
-  text-align: center;
-  margin: 3rem; }
+.subpage__pricing {
+  display: grid;
+  grid-template-columns: repeat(2, 350px);
+  grid-gap: 2rem;
+  justify-content: center;
+  padding: 1rem 0; }
+  @media (max-width: 868px) {
+    .subpage__pricing {
+      display: grid;
+      grid-template-columns: repeat(1, 42vmax);
+      grid-gap: 2rem;
+      justify-content: center;
+      padding: 1rem 0; } }
 
-.products__title {
-  font-weight: 900;
-  font-size: 3rem;
-  margin: .2em 0; }
-
-.products__body {
+.subpage__products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
   padding: 1.5em 5em; }
   @media (max-width: 868px) {
-    .products__body {
-      display: grid;
+    .subpage__products {
+      isplay: grid;
       grid-template-columns: repeat(1, 1fr);
       grid-gap: 2rem;
       padding: 1.5em 5em; } }
-
-.faq__header {
-  text-align: center;
-  margin: 3rem; }
-
-.faq__title {
-  font-weight: 900;
-  font-size: 3rem;
-  margin: .2em 0; }
 
 .faq__body {
   display: flex;
@@ -776,17 +781,23 @@ body::-webkit-scrollbar-thumb {
 .faq__togglerBtn:checked ~ .faq__answer {
   display: block; }
 
-.faq__togglerBtn:checked ~ .faq__title .faq__icon {
+.faq__togglerBtn:checked ~ .faq__question .faq__icon {
   transform: rotate(180deg); }
 
 .faq__togglerBtn2:checked ~ .faq__answer {
   display: block; }
 
-.faq__togglerBtn2:checked ~ .faq__title .faq__icon {
+.faq__togglerBtn2:checked ~ .faq__question .faq__icon {
   transform: rotate(180deg); }
 
 .faq__togglerBtn3:checked ~ .faq__answer {
   display: block; }
 
-.faq__togglerBtn3:checked ~ .faq__title .faq__icon {
+.faq__togglerBtn3:checked ~ .faq__question .faq__icon {
   transform: rotate(180deg); }
+
+.subpage__faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }

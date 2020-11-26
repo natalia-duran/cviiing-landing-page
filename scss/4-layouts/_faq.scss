@@ -1,12 +1,12 @@
 .faq {
 
-    &__header {
-        @include set-header-container($page-header: true);
-    }
+    // &__header {
+    //     @include set-header-container($page-header: true);
+    // }
 
-    &__title {
-        @include set-title($page-title: true);
-    }
+    // &__title {
+    //     @include set-title($page-title: true);
+    // }
 
     &__body {
         display: flex;
@@ -43,7 +43,7 @@
         display: block;
     }
     
-    &__togglerBtn:checked ~ .faq__title .faq__icon {
+    &__togglerBtn:checked ~ .faq__question .faq__icon {
         transform: rotate(180deg);
     }
     
@@ -51,7 +51,7 @@
         display: block;
     }
     
-    &__togglerBtn2:checked ~ .faq__title .faq__icon {
+    &__togglerBtn2:checked ~ .faq__question .faq__icon {
         transform: rotate(180deg);
     }
     
@@ -59,10 +59,16 @@
         display: block;
     }
     
-    &__togglerBtn3:checked ~ .faq__title .faq__icon {
+    &__togglerBtn3:checked ~ .faq__question .faq__icon {
         transform: rotate(180deg);
     }
 
 }
 
 
+.subpage__faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
