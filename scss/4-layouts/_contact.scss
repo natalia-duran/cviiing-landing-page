@@ -1,25 +1,37 @@
-.contact {
-    // @include section-container;
+.section__contact {
+    @include flex-center;
+}
 
-    // &__header {
-    //     @include set-header-container($page-header: false);
-    // }
+.section__contactForm {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2rem 5rem auto;
+    grid-gap: 1rem;
+    width: 60vw;
+}
 
-    // &__title {
-    //     @include set-title($page-title: false);
-    //     @include medium-phone-screens {
-    //         font-size: 2.5rem;
-    //     }
-    //     @include small-phone-screens {
-    //         font-size: 2rem;
-    //     }
-    // }
+.txtArea {
+    grid-column: 1 / 3;
+}
 
-    // &__subtitle {
-    //     @include set-subtitle;
-    // }
+.submitBtn {
+    grid-column: 1 / 3;
+}
 
-    // &__headerLine {
-    //     @include set-line;
-    // }
+@include large-screens {
+    .section__contactForm {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 2rem 2rem 5rem auto;
+        grid-gap: 1rem;
+        width: 60vw;
+    }
+    
+    .txtArea {
+        grid-column: 1;
+    }
+    
+    .submitBtn {
+        grid-column: 1;
+    }
 }

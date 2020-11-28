@@ -8,6 +8,19 @@ body {
     background-color: #ffffff;
     font-family: $font-stack;
     font-weight: map-get($font-weights, regular);
+
+    &::-webkit-scrollbar {
+        width: 0.5rem;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color:  transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $secondary-color;
+        border-radius: 5px;
+    }
 }
 
 
