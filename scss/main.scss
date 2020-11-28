@@ -6,16 +6,15 @@
 @import '2-basics/config';
 @import '2-basics/scrollbar';
 @import '2-basics/cards';
+@import '2-basics/accordion';
 @import '2-basics/buttons';
 
-// 3 - COMPONENTS
-@import '3-components/menu';
-@import '3-components/sectionContainer';
-@import '3-components/subpageContainer';
-@import '3-components/forms';
-@import '3-components/footer';
-
-@import 'utilities';
+// 3 - MODULES
+@import '3-modules/menu';
+@import '3-modules/sectionContainer';
+@import '3-modules/subpageContainer';
+@import '3-modules/forms';
+@import '3-modules/footer';
 
 // 4 - LAYOUTS
 @import '4-layouts/hero';
@@ -25,7 +24,7 @@
 @import '4-layouts/contact';
 @import '4-layouts/products';
 @import '4-layouts/faq';
-
+@import '4-layouts/registration';
 
 
 
